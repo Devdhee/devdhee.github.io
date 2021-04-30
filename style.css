@@ -152,6 +152,7 @@ nav .mainMenu li a:hover {
     height: 50px;
     border-radius: 25px;
     border: none;
+    z-index: 50;
 }
 
 .container .main button a {
@@ -332,6 +333,9 @@ nav .mainMenu li a:hover {
         color: #fff;
         font-size: 20px;
     }
+    nav .mainMenu li {
+        margin-right: 10px;
+    }
     nav .mainMenu li a:hover {
         background-color: #fef;
         color: #000;
@@ -356,8 +360,8 @@ nav .mainMenu li a:hover {
     }
     .container .main .content-text {
         text-align: left;
-        width: 60%;
-        margin-left: 0%;
+        width: 50%;
+        margin-left: 8%;
         padding-top: 80px;
         padding-left: 100px;
     }
@@ -370,12 +374,25 @@ nav .mainMenu li a:hover {
     .container .main .content-text h3 {
         text-align: left;
     }
+    .container .main button {
+        width: 150px;
+        height: 60px;
+    }
+    .container .main button a {
+        font-weight: bold;
+        display: block;
+        padding: 16px 0px;
+    }
+    .container .main button:hover {
+        background-color: #cccccc;
+    }
     .container .main .content-image {
         width: 40%;
         display: flex;
     }
     .container .main .content-image img {
         width: 80%;
+        transform: translateX(-80px);
     }
     #services {
         display: flex;
@@ -388,6 +405,7 @@ nav .mainMenu li a:hover {
         width: 80%;
         height: 550px;
         margin: 15px 10px;
+        padding-top: 25px;
     }
     #about {
         display: flex;
@@ -416,7 +434,11 @@ nav .mainMenu li a:hover {
     }
     #contact {
         position: absolute;
-        bottom: 120px;
-        right: 450px;
+        bottom: 320px;
+        right: 0;
+        transform: rotate(90deg);
+    }
+    #contact img {
+        transform: rotate(270deg);
     }
 }
