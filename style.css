@@ -148,11 +148,11 @@ nav .mainMenu li a:hover {
 }
 
 .container .main button {
-    width: 120px;
+    width: 200px;
     height: 50px;
     border-radius: 25px;
     border: none;
-    z-index: 50;
+    margin-top: 20px;
 }
 
 .container .main button a {
@@ -377,6 +377,7 @@ nav .mainMenu li a:hover {
     .container .main button {
         width: 150px;
         height: 60px;
+        margin-top: 0px;
     }
     .container .main button a {
         font-weight: bold;
