@@ -145,22 +145,20 @@ nav .mainMenu li a:hover {
     text-align: center;
     padding: 15px 0px;
     letter-spacing: 3px;
+    margin-bottom: 20px;
 }
 
-.container .main button {
-    width: 200px;
+.container .main .content-text a {
+    text-decoration: none;
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 25px;
+    width: 150px;
     height: 50px;
     border-radius: 25px;
-    border: none;
-    margin-top: 20px;
-}
-
-.container .main button a {
-    text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
+    font-weight: bold;
+    box-shadow: 2px 2px 8px #cccccc;
 }
 
 .container .content-image {
@@ -374,17 +372,14 @@ nav .mainMenu li a:hover {
     .container .main .content-text h3 {
         text-align: left;
     }
-    .container .main button {
-        width: 150px;
-        height: 60px;
-        margin-top: 0px;
-    }
-    .container .main button a {
-        font-weight: bold;
+    .container .main .content-text a {
+        width: 200px;
         display: block;
-        padding: 16px 0px;
+        text-align: center;
+        transform: translateY(-15px);
+        padding: 10px;
     }
-    .container .main button:hover {
+    .container .main .content-text a:hover {
         background-color: #cccccc;
     }
     .container .main .content-image {
