@@ -7,7 +7,6 @@ const item3 = document.querySelector('.item3');
 const item4 = document.querySelector('.item4');
 
 
-
 openMenu.addEventListener('click', show);
 closeMenu.addEventListener('click', close);
 item1.addEventListener('click', close);
@@ -24,5 +23,4 @@ function show() {
 
 function close() {
     mainMenu.style.top = '-100%';
-
 }
