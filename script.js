@@ -1,20 +1,7 @@
 const mainMenu = document.querySelector('.mainMenu');
 const closeMenu = document.querySelector('.closeMenu');
 const openMenu = document.querySelector('.openMenu');
-const item1 = document.querySelector('.item1');
-const item2 = document.querySelector('.item2');
-const item3 = document.querySelector('.item3');
-const item4 = document.querySelector('.item4');
-
-
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
-item1.addEventListener('click', close);
-item2.addEventListener('click', close);
-item3.addEventListener('click', close);
-item4.addEventListener('click', close);
-
-
+const items = document.querySelectorAll('.item');
 
 function show() {
     mainMenu.style.display = 'flex';
@@ -24,3 +11,17 @@ function show() {
 function close() {
     mainMenu.style.top = '-100%';
 }
+
+openMenu.addEventListener('click', show);
+closeMenu.addEventListener('click', close);
+items.forEach(function(item, index) {
+    item.addEventListener('click', close);
+})
+
+items.forEach((item) => {
+    document.querySelector('.item.active');
+    item.addEventListener('click', () => {
+        document.querySelector('.item.active').classList.remove('active');
+        item.classList.add("active");
+    });
+});
